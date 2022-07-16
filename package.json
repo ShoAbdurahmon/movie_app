@@ -1,0 +1,39 @@
+{
+  "name": "movie-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "start:dev": "nodemon src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "md5": "^2.3.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.3",
+    "sha256": "^0.2.0"
+  },
+  "imports": {
+    "#api/*": "./src/api/*.js",
+    "#config/*": "./src/config/*.js",
+    "#controllers/*": "./src/api/Controllers/*.js",
+    "#models/*": "./src/api/Models/*.js",
+    "#routes/*": "./src/api/Routes/*.js",
+    "#middlewares/*": "./src/api/Middlewares/*.js",
+    "#validations/*": "./src/api/Validations/*.js",
+    "#utils/*": "./src/api/Utils/*.js",
+    "#query/*": "./src/api/Queries/*.js",
+    "#uploads": "./src/uploads/"
+  }
+}
